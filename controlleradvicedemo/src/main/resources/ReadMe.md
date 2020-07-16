@@ -1,0 +1,3 @@
+ControllerAdvice 注解，只能用于Controller的注解，但有多个，比如一个为异常处理，一个为response处理，会依次进行处理。
+
+比如在异常处理中将异常包装为统一result类型，则改异常处理方法需要为该result的类型，同时需要在response处理类中排除掉，否则会有双层的包装。
