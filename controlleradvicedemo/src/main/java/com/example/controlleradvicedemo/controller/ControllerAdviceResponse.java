@@ -23,7 +23,7 @@ public class ControllerAdviceResponse implements ResponseBodyAdvice<Object> {
     public boolean supports(MethodParameter methodParameter, Class<? extends HttpMessageConverter<?>> aClass) {
         Method method = methodParameter.getMethod();
         if (method == null) {
-            System.out.println("null");
+            System.out.println("method is null");
             return false;
         }
         if (method.getReturnType().equals(CommonJsonResponse.class)) {

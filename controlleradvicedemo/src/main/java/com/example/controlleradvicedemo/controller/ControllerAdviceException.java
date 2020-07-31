@@ -14,6 +14,7 @@ public class ControllerAdviceException {
 
     @ExceptionHandler(Exception.class)
     public CommonJsonResponse customException(Exception e) {
+        e.printStackTrace();
         System.out.println("e : " + e.getMessage());
         CommonJsonResponse res = new CommonJsonResponse(HttpStatus.OK.value(), 200);
         return res;
