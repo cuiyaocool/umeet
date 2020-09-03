@@ -27,6 +27,7 @@
         <module>dao-commons</module>
         <module>jwtdemo</module>
         <module>security</module>
+        <module>test</module>
     </modules>
 
     <dependencies>
